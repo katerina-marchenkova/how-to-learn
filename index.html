@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="page">
-      <header class="header table__cell table__cell_theme_light">
+      <header class="header flex-row flex-row_theme_light">
         <div class="header__container">
           <div
             class="
@@ -34,10 +34,14 @@
             />
             <!--Todo: яндекс практикум лого-->
           </div>
-          <div class="header__item header__item_space_left header__item_align_center">
+          <div
+            class="
+              header__item header__item_space_left header__item_align_center
+            "
+          >
             <h1 class="header__title text-front">Научиться учиться</h1>
           </div>
-          <div
+          <p
             class="
               header__item
               header__item_space_left
@@ -50,7 +54,7 @@
             использовать в своей жизни?
             <!--todo: reference-->
             <a href="#" class="link header__link">Узнать</a>
-          </div>
+          </p>
           <img
             src="./images/header-image.png"
             alt="Опять двойка?"
@@ -73,7 +77,9 @@
         </div>
       </header>
       <main class="content">
-        <section class="description"></section>
+        <section class="description">
+          <div class="two-columns"></div>
+        </section>
 
         <section class="digits"></section>
 
@@ -81,8 +87,50 @@
 
         <section class="kaufman"></section>
       </main>
-      <footer class="footer">
-        <div class="logo logo_place_footer"></div>
+      <footer class="footer flex-row flex-row_theme_dark">
+        <div class="footer__columns">
+          <div class="footer__column footer__column_content_copyright">
+            <div class="logo logo_place_footer">
+              <img
+                class="logo__image"
+                src="./images/logo_place_header.svg"
+                alt="Яндекс Практикум"
+              />
+            </div>
+            <div class="footer__author">&copy; Катерина Марченкова</div>
+          </div>
+          <div class="footer__column footer__column_content_info">
+            <div class="footer__column-heading">О Практикуме</div>
+            <div class="footer__column-links">
+              <div class="footer__column-link">Главная</div>
+              <div class="footer__column-link">Концепция</div>
+              <div class="footer__column-link">Наставники</div>
+            </div>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <div class="footer__column-heading">Соцсети</div>
+            <div class="footer__column-links">
+              <a href="#" class="footer__column-link">
+                <span
+                  class="footer__social-icon social-icon social-icon_facebook"
+                ></span
+                >Facebook
+              </a>
+              <div class="footer__column-link">
+                <span
+                  class="footer__social-icon social-icon social-icon_vk"
+                ></span
+                >ВКонтакте
+              </div>
+              <div class="footer__column-link">
+                <span
+                  class="footer__social-icon social-icon social-icon_instagram"
+                ></span
+                >Instagram
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
