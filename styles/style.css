@@ -237,6 +237,66 @@ body, h1, h2, h3, h4, p, a {
 }
 
 /* content digits */
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-title_space_top_xl {
+  margin: 100px auto 0;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.section-subtitle_space_top_xxs {
+  margin: 20px auto 0;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.table_space_bottom_xl {
+  margin: 0 auto 100px;
+}
+
+.table__cell {
+  width: 250px;
+
+}
+
+.table__cell_space_top_m {
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__heading_space_bottom_xxs {
+  margin-bottom: 20px;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
 
 /* content feynman */
 
