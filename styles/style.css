@@ -21,24 +21,46 @@ body, h1, h2, h3, h4, p, a {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.flex-row {
-  display: block;
+.layout-row {
 }
 
-.flex-row_theme_transparent {
+.layout-row_theme_transparent {
   background-color: none;
   color: #000;
 }
 
-.flex-row_theme_light {
+.layout-row_theme_light {
   background-color: #f2f2f2;
   color: #000;
 }
 
-.flex-row_theme_dark {
+.layout-row_theme_dark {
   background-color: #1f1f1f;
   color: white;
+}
 
+.layout-row_inner_space_top_xl {
+  padding-top: 100px;
+}
+
+.layout-row_inner_space_bottom_xl {
+  padding-bottom: 100px;
+}
+
+.layout-row_inner_space_top_l {
+  padding-top: 90px;
+}
+
+.layout-row_inner_space_bottom_l {
+  padding-bottom: 90px;
+}
+
+.layout-row_inner_space_top_m {
+  padding-top: 60px;
+}
+
+.layout-row_inner_space_bottom_s {
+  padding-bottom: 40px;
 }
 
 /* mics */
@@ -110,6 +132,9 @@ body, h1, h2, h3, h4, p, a {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.social-icon_size_s {
   width: 16px;
   height: 16px;
 }
@@ -333,9 +358,62 @@ body, h1, h2, h3, h4, p, a {
   font-weight: normal;
 }
 
+.table__text +.table__text {
+  margin-top: 20px;
+}
+
 /* content feynman */
 .feynman {
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.feynman_height_l {
   height: 890px;
+}
+.feyman_background_size_l {
+  background-size: 867px 637px;
+}
+
+.feynman__title {
+  text-align: center;
+  font-size: 120px;
+  line-height:  1.15;
+  font-weight: bold;
+}
+
+.feynman__title_width_l {
+  width: 648px;
+}
+
+.feynman__title_space_top_xl {
+  margin: 100px auto 10px;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.feynman__subtitle_space_m {
+  margin: 60px auto;
+}
+
+.feynman__link {
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.feynman__link_space_top_half {
+  position: absolute;
+  top: 50%;
+  right: 48px;
 }
 
 /* content kaufman */
@@ -360,14 +438,6 @@ body, h1, h2, h3, h4, p, a {
   min-height: 350px;
 }
 
-.footer_inner_space_top {
-  padding-top: 60px;
-}
-
-.footer_inner_space_bottom {
-  padding-bottom: 40px;
-}
-
 .footer__columns {
   height: 100%;
 
@@ -388,7 +458,7 @@ body, h1, h2, h3, h4, p, a {
   justify-content: space-between;
 }
 
-.footer__column_content_copyright_space_left {
+.footer__column_content_copyright_space_left_s {
   margin-left: 30px;
 }
 
