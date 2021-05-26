@@ -20,22 +20,6 @@
   flex-direction: column;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.link_color_light {
-  color: white;
-}
-
-.link_color_accent {
-  color: #2f80ed;
-}
-
-.link-arrow:after {
-  content: "→";
-}
-
 .layout-row_theme_transparent {
   background-color: none;
   color: #000;
@@ -218,6 +202,15 @@
   line-height: 25px;
 }
 
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__link:after {
+  content: "→";
+}
+
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -331,9 +324,16 @@
 }
 
 .feynman__link {
+  text-decoration: none;
+  color: #2f80ed;
+
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+}
+
+.feynman__link:after {
+  content: "→";
 }
 
 .feynman__link_space_top_half {
