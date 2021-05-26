@@ -1,14 +1,4 @@
 /* page and shared styles */
-/* clear browser defaults*/
-* {
-  box-sizing: border-box;
-}
-
-body, h1, h2, h3, h4, p, a {
-  margin: 0;
-  font-size: 100%;
-  font-weight: normal;
-}
 
 .page {
   min-width: 1100px;
@@ -19,6 +9,12 @@ body, h1, h2, h3, h4, p, a {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
 
   display: flex;
   flex-direction: column;
@@ -81,38 +77,16 @@ body, h1, h2, h3, h4, p, a {
 
 /* shared blocks*/
 
-.figure {
-  background-color: #2f80ed;
-}
-
-/* todo:
-.figure-triangle {
-  width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid red;
-
-}
-
-.figure-circle {
-  width: 100%;
-	height: 100%;
-	background: red;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-
-}
-*/
-
 .logo {
   width: 183px;
   height: 32px;
 }
 
 .logo_place_header {
+  position: absolute;
   top: 30px;
+  left: 64px;
+
 }
 
 /* section */
@@ -208,50 +182,23 @@ body, h1, h2, h3, h4, p, a {
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-}
 
-.header__container {
   position: relative;
-  height: 100%;
-  top: 0;
-}
 
-.header__item {
-  position: absolute;
-}
-
-.header__item_space_left {
-  left: 64px;
-}
-
-.header__item_space_top_s {
-  bottom: 30px;
-}
-
-.header__item_space_top_m {
-  top: 64px;
-}
-
-.header__item_space_right_none {
-  right: 0;
-}
-
-.header__item_space_bottom_none {
-  bottom: 0;
-}
-
-.header__item_space_bottom_s {
-  bottom: 30px;
-}
-
-.header__item_align_center {
-  height: 100%;
   display: flex;
   align-items: center;
+
+  overflow: hidden;
 }
 
 .header__title {
   width: 730px;
+
+  position: absolute;
+  left: 64px;
+
+  z-index: 17;
+
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
@@ -259,23 +206,38 @@ body, h1, h2, h3, h4, p, a {
 
 .header__subtitle {
   width: 388px;
+
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+
+  z-index: 17;
+
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
-
-  display: relative;
-  z-index: 17;
 }
 
 .header__main-illustration {
   width: 765px;
   height: 608px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
   z-index: 1;
 }
 
 .header__square-pic {
   height: 568px;
   width: 568px;
+
+  background-color: #2f80ed;
+
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
 /*content*/
@@ -353,7 +315,7 @@ body, h1, h2, h3, h4, p, a {
 }
 
 .feynman__title_space_top_xl {
-  margin: 100px auto 10px;
+  margin: 100px auto 0;
 }
 
 .feynman__subtitle {
@@ -365,7 +327,7 @@ body, h1, h2, h3, h4, p, a {
 }
 
 .feynman__subtitle_space_m {
-  margin: 60px auto;
+  margin: 70px auto 0;
 }
 
 .feynman__link {
