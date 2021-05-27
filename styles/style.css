@@ -24,6 +24,10 @@
 .logo {
   width: 183px;
   height: 32px;
+
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
 }
 
 .logo_place_header {
