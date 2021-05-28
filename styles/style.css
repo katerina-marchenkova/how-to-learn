@@ -25,8 +25,8 @@
   width: 183px;
   height: 32px;
 
-  margin: 0;
-  padding: 0;
+ /* per reviewer comment, there is height overflow - icannot see it in FF or Chrome, but added for possible browser*/
+  max-height: 32px;
   object-fit: contain;
 }
 
