@@ -12,6 +12,11 @@
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
 
+/*cards*/
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__image/cards__image.css);
+
 /*table*/
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_transparent.css);

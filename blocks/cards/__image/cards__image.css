@@ -1,0 +1,6 @@
+.cards__image {
+  height: 160px;
+  width: 160px;
+  object-fit: contain;
+  margin: 0 40px;
+}
