@@ -4,3 +4,7 @@
 
   text-align: center;
 }
+
+.video__iframes :last-child {
+  margin-right: 0;
+}
