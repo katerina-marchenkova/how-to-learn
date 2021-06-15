@@ -79,7 +79,7 @@
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-@import url(../blocks/footer/__social-icon/_icon_type/footer__social-icon_type_facebook.css);
-@import url(../blocks/footer/__social-icon/_icon_type/footer__social-icon_type_instagram.css);
-@import url(../blocks/footer/__social-icon/_icon_type/footer__social-icon_type_vk.css);
+@import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_facebook.css);
+@import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_instagram.css);
+@import url(../blocks/footer/__social-icon/_type/footer__social-icon_type_vk.css);
 
