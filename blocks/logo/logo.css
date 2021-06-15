@@ -1,4 +1,6 @@
 .logo {
   width: 183px;
-  object-fit: contain;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }

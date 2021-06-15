@@ -7,4 +7,6 @@
 
   /* as i understand, per reviewer comment, there is height overflow - icannot see it in FF or Chrome, but added for possible browser*/
    max-height: 32px;
+
+   background-image: url(../../../images/logo_place_header.svg);
 }
