@@ -1,8 +1,11 @@
 .video__iframes {
+  padding: 0;
   position: relative;
   top: 50px;
 
   text-align: center;
+
+  list-style: none;
 }
 
 .video__iframes :last-child {
